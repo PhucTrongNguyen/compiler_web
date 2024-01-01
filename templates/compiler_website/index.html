@@ -1,7 +1,8 @@
 {% extends "root/base.html" %}
 {% load static %}
 {% block content %}
-<div class="container">
+<div class="container-fuiled">
+    <h1 class="text-center">IDE DEVELOPER</h1>
     <div class="row">
         <div class="col-6">
             <div class="bg-dark rounded text-light d-flex justify-content-between align-items-center">
@@ -11,14 +12,15 @@
                     </button>
                 </div>
                 <select class="custom-select w-25" id="inputGroupSelect01">
+                    <option selected>Choose...</option>
                     <option value="Python">Python</option>
                     <option value="Cpp">C++</option>
                     <option value="Java">Java</option>
                 </select>
             </div>
-            <textarea style="height: 100%;" class="text-light form-control bg-dark" name="" id="editor" type="text" cols="30" rows="10"></textarea>
+            <textarea style="height: 100%; width: 100%" class="text-light form-control bg-dark" name="" id="editor" type="text" cols="30" rows="10"></textarea>
         </div>
-        <div class="col-6">
+        <div class="col-6 d-flex align-items-center bg-dark text-light rounded">
             <div class="row">
                 <div class="col-12">
                     <h6>Input</h6>
